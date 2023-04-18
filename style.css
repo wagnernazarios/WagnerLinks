@@ -1,0 +1,23 @@
+body{
+  /* propriedades padrao */
+
+  /* background-image: url(assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center; */
+
+
+
+
+/* propriedade shorthand ou atalho 'clean code' */
+
+/*ordem - background: image repeat position/size */
+  background: url(assets/bg.jpg) no-repeat top center/cover;
+}
+
+#container{
+  width: 360px;
+  height: 712px;
+  border: 2px solid red;
+  margin:auto;
+}
