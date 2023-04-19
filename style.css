@@ -53,34 +53,39 @@ body *{
   font-weight: 14px;
   margin-top: 8px;
 }
-/* Links */
-ul{display: flex;
+
+
+/* buttons Links */
+ul{
+  display: flex;
   flex-direction: column;
   gap: 14px;
 }
 
 ul li{
-  background-color: rgba(255,255,255,0.1);
-  border: 1px solid rgba(255,255,255,0.5);;
-  border-radius: 10px;
-    transition: 0.3s ease-in-out;
-
+ 
 }
 
-ul li:hover{
-  background-color: #fff;
-  color: black;
-}
+
 
 ul li a{  
+  background-color: rgba(255,255,255,0.1);
+ 
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 52px;
-  transition: 0.3s ease-in-out;
+  padding: 16px 24px;  
+  font-weight: 500;
+  transition: all .5s ease;
 }
 
-ul li a:hover{
-  color: #000;
-  font-weight: 600;
+ul li a:hover {
+   background-color:rgba(255,255,255,0.05);
+   box-shadow: inset 2px 4px 8px rgba(0,0,0,0.8);
 }
+
+
+
