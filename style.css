@@ -1,4 +1,3 @@
-
 *{
   margin: 0;
   padding: 0;
@@ -6,6 +5,28 @@
   list-style: none;
   text-decoration: none;
 }
+
+:root{
+  --text-color: #fff;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255,255,255,0.2);
+  --surface-color: rgba(255,255,255,0.1);
+  --surface-color-hover: rgba(255,255,255,0.05);
+  --surface-color-icons-hover: rgba(255,255,255,0.2);
+  --box-shadow-icons: rgba(255,255,255,0.5);
+
+}
+
+.lighty{
+  --text-color: #000;
+  --bg-url: url(assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0,0,0,0.5);
+  --surface-color:rgba(0,0,0,0.1);
+  --surface-color-hover: rgba(0, 0, 0, 0.3);
+  --surface-color-icons-hover: rgba(0,0,0,0.2);
+
+  --box-shadow-icons: rgba(0,0,0,0.6);
+  }
 
 body{
   /* propriedades padrao */
@@ -21,14 +42,14 @@ body{
 /* propriedade shorthand ou atalho 'clean code' */
 
 /*ordem - background: image repeat position/size */
-  background: url(assets/bg.jpg) no-repeat top center/cover;
+  background: var(--bg-url)  no-repeat top center/cover;
 
   
 }
 
 body *{  
   font-family: 'Inter', sans-serif;
-  color:#fff;
+  color:var(--text-color);
 }
 
 #container{
@@ -45,12 +66,8 @@ body *{
   width: 112px;
   margin: auto;
   display: block;
-  border-radius: 50%;
-  transition: 0.5s;
 }
-#profile img:hover{
- box-shadow: 0px 0px 24px 0px #fff;
-}
+
 
 
 #profile p{
@@ -71,8 +88,8 @@ ul{
 }
 
 ul li a{  
-  background-color: rgba(255,255,255,0.1);
- 
+  background-color: var(--surface-color);
+  border: 1.5px solid var(--stroke-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 8px;
@@ -86,7 +103,7 @@ ul li a{
 }
 
 ul li a:hover {
-   background-color:rgba(255,255,255,0.05);
+   background-color: var(--surface-color-hover);
    box-shadow: inset 4px 4px 8px rgba(0,0,0,0.6);
 }
 
@@ -105,8 +122,8 @@ ul li a:hover {
 }
 
 #social-links a ion-icon:hover{
-  background-color: rgba(255,255,255,0.2);
-  box-shadow: 0px 0px 18px 0px rgba(255,255,255,0.5);
+  background-color: var(--surface-color-icons-hover);
+  box-shadow: 0px 0px 18px 0px var(--box-shadow-icons);
 }
 
 footer{
@@ -114,7 +131,7 @@ footer{
   gap: 8px;
   align-items: center;
   justify-content: center;
-padding: 24px; 
+  padding: 24px; 
 }
 
 footer span {
@@ -127,7 +144,7 @@ footer span ion-icon{
 }
 
 footer a {
-  color:#b9b9b9;
+  color: var(--text-color);
   transition: all .5s ease;
 }
 footer a:hover {
