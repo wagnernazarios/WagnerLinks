@@ -12,20 +12,19 @@
   --stroke-color: rgba(255,255,255,0.2);
   --surface-color: rgba(255,255,255,0.1);
   --surface-color-hover: rgba(255,255,255,0.05);
-  --surface-color-icons-hover: rgba(255,255,255,0.2);
+  --highlight-color-icons: rgba(255,255,255,0.2);
   --box-shadow-icons: rgba(255,255,255,0.5);
-
+  --switch-bg-url: url(./assets/moon-star.svg);
 }
 
 .lighty{
   --text-color: #000;
   --bg-url: url(assets/bg-mobile-light.jpg);
-  --stroke-color: rgba(0,0,0,0.5);
+  --stroke-color: rgba(0,0,0,0.6);
   --surface-color:rgba(0,0,0,0.1);
-  --surface-color-hover: rgba(0, 0, 0, 0.3);
-  --surface-color-icons-hover: rgba(0,0,0,0.2);
-
-  --box-shadow-icons: rgba(0,0,0,0.6);
+  --surface-color-hover: rgba(0, 0, 0, 0.02);
+  --highlight-color-icons: rgba(0,0,0,0.3);
+  --switch-bg-url: url(./assets/sun.svg);
   }
 
 body{
@@ -77,6 +76,16 @@ body *{
   margin-top: 8px;
 }
 
+/* switch */
+
+#switch button{
+  width: 32px;
+  height: 32px;
+  border: 0;
+  border-radius: 50%;
+  background: white var(--switch-bg-url) no-repeat center ;
+}
+
 
 /* buttons Links */
 
@@ -89,7 +98,6 @@ ul{
 
 ul li a{  
   background-color: var(--surface-color);
-  border: 1.5px solid var(--stroke-color);
   backdrop-filter: blur(4px);
   -webkit-backdrop-filter: blur(4px);
   border-radius: 8px;
@@ -103,9 +111,12 @@ ul li a{
 }
 
 ul li a:hover {
+  border: none;
    background-color: var(--surface-color-hover);
    box-shadow: inset 4px 4px 8px rgba(0,0,0,0.6);
 }
+
+/* social links */
 
 #social-links {
   display: flex;
@@ -122,7 +133,7 @@ ul li a:hover {
 }
 
 #social-links a ion-icon:hover{
-  background-color: var(--surface-color-icons-hover);
+  background-color: var(--highlight-color-icons);
   box-shadow: 0px 0px 18px 0px var(--box-shadow-icons);
 }
 
