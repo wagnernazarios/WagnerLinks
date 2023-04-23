@@ -27,6 +27,8 @@
   --box-shadow-icons: rgba(0,0,0,0.5);
 
   --switch-bg-url: url(./assets/sun.svg);
+    transition: 2s;
+
   }
 
 body{
