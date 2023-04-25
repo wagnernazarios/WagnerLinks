@@ -30,7 +30,7 @@ O NazarioLinks é um agregador de links para que eu possa usar como cartão de v
 
   
 
-- [Acesse o projeto finalizado, online](https://wagnernazarios.github.io/WagnerLinks)
+- [Acesse o projeto finalizado, online](https://wagner-links.vercel.app/)
 
   
 
